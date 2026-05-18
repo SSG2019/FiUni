@@ -1,0 +1,15 @@
+python "FiUni/task_boundary_detect/detect_ls_boundaries.py" \
+  --samples_per_task 1000 \
+  --cl_root "./data/CL_clean" \
+  --batch_size 32 \
+  --t_low 0.65 \
+  --t_high 0.85 \
+  --expand_cooldown_steps 80 \
+  --new_cooldown_steps 10 \
+  --rank 32 \
+  --detect_rank 4 \
+  --layer_selection all \
+  --detect_layer_selection "11" \
+  --target_modules "q,k,v,o" \
+  --use_bfloat16 \
+  --device "cuda:1"

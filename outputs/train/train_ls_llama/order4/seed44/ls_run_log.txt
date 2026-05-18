@@ -1,0 +1,59 @@
+{
+  "model_name": "/home/dell/.cache/modelscope/hub/models/LLM-Research/Meta-Llama-3.1-8B",
+  "order_id": 4,
+  "seed": 44,
+  "batch_size": 4,
+  "rank": 128,
+  "detect_rank": 8,
+  "expand_delta_rank": 8,
+  "expand_direct": false,
+  "max_source_len": 1024,
+  "max_target_len": 64,
+  "t_low": 0.6,
+  "t_high": 0.7,
+  "layer_selection": "all",
+  "detect_layer_selection": "31",
+  "target_modules": "q,v",
+  "lr": 0.0001,
+  "weight_decay": 0.0,
+  "filora_dropout": 0.1,
+  "expand_cooldown_steps": 40,
+  "new_cooldown_steps": 10,
+  "filora_initial_max_optimizer_steps": null,
+  "filora_expand_extra_optimizer_steps": 0,
+  "cache_dir": null,
+  "cl_root": "/home/dell/FU_CL/CL",
+  "device": "cuda:1",
+  "out_dir": "/home/dell/FU_CL/outputs/train/train_ls_llama/order4/seed44",
+  "eval_batch_size": 4,
+  "eval_max_new_tokens": null,
+  "skip_test_eval": false,
+  "no_progress": false,
+  "gradient_accumulation_steps": 8,
+  "fisher_ag_group_size": 8,
+  "use_bfloat16": true,
+  "offline": false,
+  "model_family": "llama"
+}
+[Info] Device: cuda:1
+[Info] out_dir: /home/dell/FU_CL/outputs/train/train_ls_llama/order4/seed44
+[Info] Total FiLoRA R parameters (numel): 9,867,264
+[Done] LS training completed.
+[Info] Merged FiLoRA into base weights for 64 layers.
+[Eval] task=mnli train_win_sid=sp_0 seq_EM_acc=0.6703 (5094/7600) batches=1900 (FiLoRA=sum_all)
+[Eval] task=cb train_win_sid=sp_0 seq_EM_acc=0.6786 (38/56) batches=14 (FiLoRA=sum_all)
+[Eval] task=wic train_win_sid=sp_1 seq_EM_acc=0.5235 (334/638) batches=160 (FiLoRA=sum_all)
+[Eval] task=copa train_win_sid=sp_2 seq_EM_acc=0.9100 (91/100) batches=25 (FiLoRA=sum_all)
+[Eval] task=qqp train_win_sid=sp_1 seq_EM_acc=0.7820 (5943/7600) batches=1900 (FiLoRA=sum_all)
+[Eval] task=boolqa train_win_sid=sp_1 seq_EM_acc=0.6676 (2183/3270) batches=818 (FiLoRA=sum_all)
+[Eval] task=rte train_win_sid=sp_0 seq_EM_acc=0.8231 (228/277) batches=70 (FiLoRA=sum_all)
+[Eval] task=imdb train_win_sid=sp_3 seq_EM_acc=0.9476 (7202/7600) batches=1900 (FiLoRA=sum_all)
+[Eval] task=yelp train_win_sid=sp_4 seq_EM_acc=0.6426 (4884/7600) batches=1900 (FiLoRA=sum_all)
+[Eval] task=amazon train_win_sid=sp_4 seq_EM_acc=0.5850 (4446/7600) batches=1900 (FiLoRA=sum_all)
+[Eval] task=sst-2 train_win_sid=sp_5 seq_EM_acc=0.9541 (832/872) batches=218 (FiLoRA=sum_all)
+[Eval] task=dbpedia train_win_sid=sp_6 seq_EM_acc=0.9700 (7372/7600) batches=1900 (FiLoRA=sum_all)
+[Eval] task=ag train_win_sid=sp_7 seq_EM_acc=0.8839 (6718/7600) batches=1900 (FiLoRA=sum_all)
+[Eval] task=multirc train_win_sid=sp_1 seq_EM_acc=0.7564 (3667/4848) batches=1212 (FiLoRA=sum_all)
+[Eval] task=yahoo train_win_sid=sp_8 seq_EM_acc=0.7301 (5549/7600) batches=1900 (FiLoRA=sum_all)
+[Eval] macro_avg_sequence_em_acc (mean over tasks)=0.7683
+[Done] Test eval: /home/dell/FU_CL/outputs/train/train_ls_llama/order4/seed44/ls_test_eval.json

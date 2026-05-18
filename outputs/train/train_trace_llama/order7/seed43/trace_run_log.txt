@@ -1,0 +1,61 @@
+{
+  "model_name": "/home/dell/.cache/modelscope/hub/models/LLM-Research/Meta-Llama-3.1-8B",
+  "order_id": 7,
+  "seed": 43,
+  "batch_size": 2,
+  "task_epochs": "1,1,1,1,1,1,1,1",
+  "task_batch_sizes": "8,8,2,2,2,8,8,2",
+  "task_gradient_accumulation_steps": "4,4,16,16,16,4,4,16",
+  "rank": 128,
+  "detect_rank": 8,
+  "expand_delta_rank": 8,
+  "expand_direct": false,
+  "max_source_len": 1024,
+  "max_target_len": 500,
+  "t_low": 0.6,
+  "t_high": 0.7,
+  "layer_selection": "all",
+  "detect_layer_selection": "31",
+  "target_modules": "q,v",
+  "lr": 0.0001,
+  "weight_decay": 0.0,
+  "filora_dropout": 0.0,
+  "expand_cooldown_steps": 100,
+  "new_cooldown_steps": 100,
+  "filora_initial_max_optimizer_steps": null,
+  "filora_expand_extra_optimizer_steps": 0,
+  "cache_dir": null,
+  "trace_root": "/home/dell/FU_CL/data/TRACE-benchmark/LLM-CL-Benchmark",
+  "device": "cuda:0",
+  "out_dir": "/home/dell/FU_CL/outputs/train/train_trace_llama/order7/seed43",
+  "eval_batch_size": null,
+  "task_eval_batch_sizes": "",
+  "eval_max_new_tokens": null,
+  "eval_do_sample": true,
+  "eval_num_beams": 1,
+  "eval_temperature": 0.95,
+  "eval_top_p": 0.7,
+  "eval_top_k": 50,
+  "skip_test_eval": false,
+  "no_progress": false,
+  "gradient_accumulation_steps": 1,
+  "fisher_ag_group_size": 8,
+  "use_bfloat16": true,
+  "offline": false,
+  "model_family": "llama"
+}
+[Info] Device: cuda:0
+[Info] out_dir: /home/dell/FU_CL/outputs/train/train_trace_llama/order7/seed43
+[Info] Total FiLoRA R parameters (numel): 14,565,376
+[Done] TRACE training completed.
+[Info] Merged FiLoRA into base weights for 64 layers.
+[Eval] task=c-stance train_win_sid=sp_0 metric=accuracy score=48.0000 batches=250 (FiLoRA=sum_all)
+[Eval] task=fomc train_win_sid=sp_1 metric=accuracy score=59.8790 batches=62 (FiLoRA=sum_all)
+[Eval] task=meetingbank train_win_sid=sp_2 metric=rouge_l score=45.9784 batches=346 (FiLoRA=sum_all)
+[Eval] task=py150 train_win_sid=sp_4 metric=edit_similarity score=48.7820 batches=1000 (FiLoRA=sum_all)
+[Eval] task=scienceqa train_win_sid=sp_6 metric=accuracy score=79.7500 batches=1000 (FiLoRA=sum_all)
+[Eval] task=numglue-cm train_win_sid=sp_8 metric=accuracy score=59.2593 batches=11 (FiLoRA=sum_all)
+[Eval] task=numglue-ds train_win_sid=sp_10 metric=accuracy score=58.7692 batches=41 (FiLoRA=sum_all)
+[Eval] task=20minuten train_win_sid=sp_11 metric=sari score=40.8713 batches=100 (FiLoRA=sum_all)
+[Eval] macro_avg_task_metric=55.1612
+[Done] Test eval: /home/dell/FU_CL/outputs/train/train_trace_llama/order7/seed43/trace_test_eval.json

@@ -1,0 +1,72 @@
+{
+  "per_task": {
+    "c-stance": {
+      "metric": "accuracy",
+      "metric_score": 35.699999999999996,
+      "train_window_majority_subspace_id": "sp_0",
+      "num_batches": 63,
+      "num_examples": 2000,
+      "acc_correct": 714,
+      "acc_total": 2000
+    },
+    "fomc": {
+      "metric": "accuracy",
+      "metric_score": 40.92741935483871,
+      "train_window_majority_subspace_id": "sp_1",
+      "num_batches": 16,
+      "num_examples": 496,
+      "acc_correct": 203,
+      "acc_total": 496
+    },
+    "meetingbank": {
+      "metric": "rouge_l",
+      "metric_score": 44.05613064842399,
+      "train_window_majority_subspace_id": "sp_2",
+      "num_batches": 692,
+      "num_examples": 692
+    },
+    "py150": {
+      "metric": "edit_similarity",
+      "metric_score": 29.330940367310042,
+      "train_window_majority_subspace_id": "sp_4",
+      "num_batches": 250,
+      "num_examples": 2000
+    },
+    "scienceqa": {
+      "metric": "accuracy",
+      "metric_score": 42.4,
+      "train_window_majority_subspace_id": "sp_6",
+      "num_batches": 250,
+      "num_examples": 2000,
+      "acc_correct": 848,
+      "acc_total": 2000
+    },
+    "numglue-cm": {
+      "metric": "accuracy",
+      "metric_score": 3.7037037037037033,
+      "train_window_majority_subspace_id": "sp_7",
+      "num_batches": 3,
+      "num_examples": 81,
+      "acc_correct": 3,
+      "acc_total": 81
+    },
+    "numglue-ds": {
+      "metric": "accuracy",
+      "metric_score": 36.30769230769231,
+      "train_window_majority_subspace_id": "sp_7",
+      "num_batches": 11,
+      "num_examples": 325,
+      "acc_correct": 118,
+      "acc_total": 325
+    },
+    "20minuten": {
+      "metric": "sari",
+      "metric_score": 38.088050087082955,
+      "train_window_majority_subspace_id": "sp_8",
+      "num_batches": 25,
+      "num_examples": 200
+    }
+  },
+  "macro_avg_task_metric": 33.814242058631464,
+  "filora_forward": "sum_all_existing_subspaces"
+}

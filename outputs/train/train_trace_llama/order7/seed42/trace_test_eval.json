@@ -1,0 +1,72 @@
+{
+  "per_task": {
+    "c-stance": {
+      "metric": "accuracy",
+      "metric_score": 52.0,
+      "train_window_majority_subspace_id": "sp_0",
+      "num_batches": 250,
+      "num_examples": 2000,
+      "acc_correct": 1040,
+      "acc_total": 2000
+    },
+    "fomc": {
+      "metric": "accuracy",
+      "metric_score": 65.7258064516129,
+      "train_window_majority_subspace_id": "sp_1",
+      "num_batches": 62,
+      "num_examples": 496,
+      "acc_correct": 326,
+      "acc_total": 496
+    },
+    "meetingbank": {
+      "metric": "rouge_l",
+      "metric_score": 46.70908064127202,
+      "train_window_majority_subspace_id": "sp_2",
+      "num_batches": 346,
+      "num_examples": 692
+    },
+    "py150": {
+      "metric": "edit_similarity",
+      "metric_score": 48.029266885774014,
+      "train_window_majority_subspace_id": "sp_4",
+      "num_batches": 1000,
+      "num_examples": 2000
+    },
+    "scienceqa": {
+      "metric": "accuracy",
+      "metric_score": 75.75,
+      "train_window_majority_subspace_id": "sp_6",
+      "num_batches": 1000,
+      "num_examples": 2000,
+      "acc_correct": 1515,
+      "acc_total": 2000
+    },
+    "numglue-cm": {
+      "metric": "accuracy",
+      "metric_score": 62.96296296296296,
+      "train_window_majority_subspace_id": "sp_8",
+      "num_batches": 11,
+      "num_examples": 81,
+      "acc_correct": 51,
+      "acc_total": 81
+    },
+    "numglue-ds": {
+      "metric": "accuracy",
+      "metric_score": 59.38461538461538,
+      "train_window_majority_subspace_id": "sp_10",
+      "num_batches": 41,
+      "num_examples": 325,
+      "acc_correct": 193,
+      "acc_total": 325
+    },
+    "20minuten": {
+      "metric": "sari",
+      "metric_score": 39.65165993262784,
+      "train_window_majority_subspace_id": "sp_11",
+      "num_batches": 100,
+      "num_examples": 200
+    }
+  },
+  "macro_avg_task_metric": 56.276674032358144,
+  "filora_forward": "sum_all_existing_subspaces"
+}

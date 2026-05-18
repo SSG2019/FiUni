@@ -1,0 +1,3059 @@
+{
+  "summary": {
+    "task_names": [
+      "mnli",
+      "cb",
+      "wic",
+      "copa",
+      "qqp",
+      "boolqa",
+      "rte",
+      "imdb",
+      "yelp",
+      "amazon",
+      "sst-2",
+      "dbpedia",
+      "ag",
+      "multirc",
+      "yahoo"
+    ],
+    "decision_count": 427,
+    "actions": {
+      "NEW": 11,
+      "EXPAND": 5,
+      "REUSE": 411,
+      "WAIT": 0
+    },
+    "boundary_batch_positions": [
+      32,
+      40,
+      71,
+      83,
+      115,
+      146,
+      177,
+      208,
+      240,
+      271,
+      302,
+      333,
+      365,
+      396
+    ],
+    "config": {
+      "model_name": "t5-base",
+      "order_id": 4,
+      "seed": 42,
+      "samples_per_task": 1000,
+      "batch_size": 32,
+      "rank": 32,
+      "detect_rank": 4,
+      "max_source_len": 256,
+      "max_target_len": 32,
+      "t_low": 0.65,
+      "t_high": 0.85,
+      "expand_cooldown_steps": 80,
+      "new_cooldown_steps": 10,
+      "layer_selection": "all",
+      "detect_layer_selection": "11",
+      "target_modules": "q,k,v,o",
+      "cache_dir": null,
+      "cl_root": "./CL",
+      "device": "cuda:1",
+      "out_dir": "outputs/task_boundary_detect",
+      "use_bfloat16": true,
+      "offline": false
+    }
+  },
+  "decisions": [
+    {
+      "step": 0,
+      "action": "NEW",
+      "best_id": null,
+      "best_sim": 0.0,
+      "created_id": "sp_0"
+    },
+    {
+      "step": 1,
+      "action": "REUSE",
+      "best_id": "sp_0",
+      "best_sim": 0.9321547423799833,
+      "created_id": null
+    },
+    {
+      "step": 2,
+      "action": "REUSE",
+      "best_id": "sp_0",
+      "best_sim": 0.9192756190896034,
+      "created_id": null
+    },
+    {
+      "step": 3,
+      "action": "REUSE",
+      "best_id": "sp_0",
+      "best_sim": 0.9317982743183771,
+      "created_id": null
+    },
+    {
+      "step": 4,
+      "action": "REUSE",
+      "best_id": "sp_0",
+      "best_sim": 0.9211483523249626,
+      "created_id": null
+    },
+    {
+      "step": 5,
+      "action": "REUSE",
+      "best_id": "sp_0",
+      "best_sim": 0.9123586465915045,
+      "created_id": null
+    },
+    {
+      "step": 6,
+      "action": "REUSE",
+      "best_id": "sp_0",
+      "best_sim": 0.9297772149244944,
+      "created_id": null
+    },
+    {
+      "step": 7,
+      "action": "REUSE",
+      "best_id": "sp_0",
+      "best_sim": 0.9388198703527451,
+      "created_id": null
+    },
+    {
+      "step": 8,
+      "action": "REUSE",
+      "best_id": "sp_0",
+      "best_sim": 0.9450344269474348,
+      "created_id": null
+    },
+    {
+      "step": 9,
+      "action": "REUSE",
+      "best_id": "sp_0",
+      "best_sim": 0.9225225299596786,
+      "created_id": null
+    },
+    {
+      "step": 10,
+      "action": "REUSE",
+      "best_id": "sp_0",
+      "best_sim": 0.9101918513576189,
+      "created_id": null
+    },
+    {
+      "step": 11,
+      "action": "REUSE",
+      "best_id": "sp_0",
+      "best_sim": 0.9253925904631615,
+      "created_id": null
+    },
+    {
+      "step": 12,
+      "action": "REUSE",
+      "best_id": "sp_0",
+      "best_sim": 0.906379630168279,
+      "created_id": null
+    },
+    {
+      "step": 13,
+      "action": "REUSE",
+      "best_id": "sp_0",
+      "best_sim": 0.7458558082580566,
+      "created_id": null
+    },
+    {
+      "step": 14,
+      "action": "REUSE",
+      "best_id": "sp_0",
+      "best_sim": 0.9263821939627329,
+      "created_id": null
+    },
+    {
+      "step": 15,
+      "action": "REUSE",
+      "best_id": "sp_0",
+      "best_sim": 0.8855478639403979,
+      "created_id": null
+    },
+    {
+      "step": 16,
+      "action": "REUSE",
+      "best_id": "sp_0",
+      "best_sim": 0.9049733902017275,
+      "created_id": null
+    },
+    {
+      "step": 17,
+      "action": "REUSE",
+      "best_id": "sp_0",
+      "best_sim": 0.9223209321498871,
+      "created_id": null
+    },
+    {
+      "step": 18,
+      "action": "REUSE",
+      "best_id": "sp_0",
+      "best_sim": 0.9326085497935613,
+      "created_id": null
+    },
+    {
+      "step": 19,
+      "action": "REUSE",
+      "best_id": "sp_0",
+      "best_sim": 0.944018542766571,
+      "created_id": null
+    },
+    {
+      "step": 20,
+      "action": "REUSE",
+      "best_id": "sp_0",
+      "best_sim": 0.9461189160744349,
+      "created_id": null
+    },
+    {
+      "step": 21,
+      "action": "REUSE",
+      "best_id": "sp_0",
+      "best_sim": 0.8904366691907247,
+      "created_id": null
+    },
+    {
+      "step": 22,
+      "action": "REUSE",
+      "best_id": "sp_0",
+      "best_sim": 0.9177086626489958,
+      "created_id": null
+    },
+    {
+      "step": 23,
+      "action": "REUSE",
+      "best_id": "sp_0",
+      "best_sim": 0.936894158522288,
+      "created_id": null
+    },
+    {
+      "step": 24,
+      "action": "REUSE",
+      "best_id": "sp_0",
+      "best_sim": 0.9342621316512426,
+      "created_id": null
+    },
+    {
+      "step": 25,
+      "action": "REUSE",
+      "best_id": "sp_0",
+      "best_sim": 0.91306471824646,
+      "created_id": null
+    },
+    {
+      "step": 26,
+      "action": "REUSE",
+      "best_id": "sp_0",
+      "best_sim": 0.9163832341631254,
+      "created_id": null
+    },
+    {
+      "step": 27,
+      "action": "REUSE",
+      "best_id": "sp_0",
+      "best_sim": 0.9489548405011495,
+      "created_id": null
+    },
+    {
+      "step": 28,
+      "action": "REUSE",
+      "best_id": "sp_0",
+      "best_sim": 0.8525226960579554,
+      "created_id": null
+    },
+    {
+      "step": 29,
+      "action": "REUSE",
+      "best_id": "sp_0",
+      "best_sim": 0.9209186360239983,
+      "created_id": null
+    },
+    {
+      "step": 30,
+      "action": "REUSE",
+      "best_id": "sp_0",
+      "best_sim": 0.9247318084041277,
+      "created_id": null
+    },
+    {
+      "step": 31,
+      "action": "REUSE",
+      "best_id": "sp_0",
+      "best_sim": 0.8336218992869059,
+      "created_id": null
+    },
+    {
+      "step": 32,
+      "action": "EXPAND",
+      "best_id": "sp_0",
+      "best_sim": 0.8071850687265396,
+      "created_id": null
+    },
+    {
+      "step": 33,
+      "action": "REUSE",
+      "best_id": "sp_0",
+      "best_sim": 0.9429668883482615,
+      "created_id": null
+    },
+    {
+      "step": 34,
+      "action": "REUSE",
+      "best_id": "sp_0",
+      "best_sim": 0.9225407838821411,
+      "created_id": null
+    },
+    {
+      "step": 35,
+      "action": "REUSE",
+      "best_id": "sp_0",
+      "best_sim": 0.9309086228410403,
+      "created_id": null
+    },
+    {
+      "step": 36,
+      "action": "REUSE",
+      "best_id": "sp_0",
+      "best_sim": 0.9252797961235046,
+      "created_id": null
+    },
+    {
+      "step": 37,
+      "action": "REUSE",
+      "best_id": "sp_0",
+      "best_sim": 0.9405526618162791,
+      "created_id": null
+    },
+    {
+      "step": 38,
+      "action": "REUSE",
+      "best_id": "sp_0",
+      "best_sim": 0.9213372419277827,
+      "created_id": null
+    },
+    {
+      "step": 39,
+      "action": "REUSE",
+      "best_id": "sp_0",
+      "best_sim": 0.5550313231845697,
+      "created_id": null
+    },
+    {
+      "step": 40,
+      "action": "NEW",
+      "best_id": "sp_0",
+      "best_sim": 0.3252764706655095,
+      "created_id": "sp_1"
+    },
+    {
+      "step": 41,
+      "action": "REUSE",
+      "best_id": "sp_1",
+      "best_sim": 0.908364807566007,
+      "created_id": null
+    },
+    {
+      "step": 42,
+      "action": "REUSE",
+      "best_id": "sp_1",
+      "best_sim": 0.9066526740789413,
+      "created_id": null
+    },
+    {
+      "step": 43,
+      "action": "REUSE",
+      "best_id": "sp_1",
+      "best_sim": 0.9108890170852343,
+      "created_id": null
+    },
+    {
+      "step": 44,
+      "action": "REUSE",
+      "best_id": "sp_1",
+      "best_sim": 0.9300922925273577,
+      "created_id": null
+    },
+    {
+      "step": 45,
+      "action": "REUSE",
+      "best_id": "sp_1",
+      "best_sim": 0.9010137319564819,
+      "created_id": null
+    },
+    {
+      "step": 46,
+      "action": "REUSE",
+      "best_id": "sp_1",
+      "best_sim": 0.923277864853541,
+      "created_id": null
+    },
+    {
+      "step": 47,
+      "action": "REUSE",
+      "best_id": "sp_1",
+      "best_sim": 0.9264091774821281,
+      "created_id": null
+    },
+    {
+      "step": 48,
+      "action": "REUSE",
+      "best_id": "sp_1",
+      "best_sim": 0.9367596333225569,
+      "created_id": null
+    },
+    {
+      "step": 49,
+      "action": "REUSE",
+      "best_id": "sp_1",
+      "best_sim": 0.9369200939933459,
+      "created_id": null
+    },
+    {
+      "step": 50,
+      "action": "REUSE",
+      "best_id": "sp_1",
+      "best_sim": 0.8881947584450245,
+      "created_id": null
+    },
+    {
+      "step": 51,
+      "action": "REUSE",
+      "best_id": "sp_1",
+      "best_sim": 0.9024315923452377,
+      "created_id": null
+    },
+    {
+      "step": 52,
+      "action": "REUSE",
+      "best_id": "sp_1",
+      "best_sim": 0.6396841006353498,
+      "created_id": null
+    },
+    {
+      "step": 53,
+      "action": "REUSE",
+      "best_id": "sp_1",
+      "best_sim": 0.8991134352982044,
+      "created_id": null
+    },
+    {
+      "step": 54,
+      "action": "REUSE",
+      "best_id": "sp_1",
+      "best_sim": 0.9118514085809389,
+      "created_id": null
+    },
+    {
+      "step": 55,
+      "action": "REUSE",
+      "best_id": "sp_1",
+      "best_sim": 0.914157452682654,
+      "created_id": null
+    },
+    {
+      "step": 56,
+      "action": "REUSE",
+      "best_id": "sp_1",
+      "best_sim": 0.915672113498052,
+      "created_id": null
+    },
+    {
+      "step": 57,
+      "action": "REUSE",
+      "best_id": "sp_1",
+      "best_sim": 0.929522417485714,
+      "created_id": null
+    },
+    {
+      "step": 58,
+      "action": "REUSE",
+      "best_id": "sp_1",
+      "best_sim": 0.9200421397884687,
+      "created_id": null
+    },
+    {
+      "step": 59,
+      "action": "REUSE",
+      "best_id": "sp_1",
+      "best_sim": 0.8887182498971621,
+      "created_id": null
+    },
+    {
+      "step": 60,
+      "action": "REUSE",
+      "best_id": "sp_1",
+      "best_sim": 0.9071276982625326,
+      "created_id": null
+    },
+    {
+      "step": 61,
+      "action": "REUSE",
+      "best_id": "sp_1",
+      "best_sim": 0.9118856514493624,
+      "created_id": null
+    },
+    {
+      "step": 62,
+      "action": "REUSE",
+      "best_id": "sp_1",
+      "best_sim": 0.9097072457273802,
+      "created_id": null
+    },
+    {
+      "step": 63,
+      "action": "REUSE",
+      "best_id": "sp_1",
+      "best_sim": 0.9193991124629974,
+      "created_id": null
+    },
+    {
+      "step": 64,
+      "action": "REUSE",
+      "best_id": "sp_1",
+      "best_sim": 0.9031306654214859,
+      "created_id": null
+    },
+    {
+      "step": 65,
+      "action": "REUSE",
+      "best_id": "sp_1",
+      "best_sim": 0.9051953057448069,
+      "created_id": null
+    },
+    {
+      "step": 66,
+      "action": "REUSE",
+      "best_id": "sp_1",
+      "best_sim": 0.9102991446852684,
+      "created_id": null
+    },
+    {
+      "step": 67,
+      "action": "REUSE",
+      "best_id": "sp_1",
+      "best_sim": 0.9092085808515549,
+      "created_id": null
+    },
+    {
+      "step": 68,
+      "action": "REUSE",
+      "best_id": "sp_1",
+      "best_sim": 0.9213712240258852,
+      "created_id": null
+    },
+    {
+      "step": 69,
+      "action": "REUSE",
+      "best_id": "sp_1",
+      "best_sim": 0.9198791732390722,
+      "created_id": null
+    },
+    {
+      "step": 70,
+      "action": "REUSE",
+      "best_id": "sp_1",
+      "best_sim": 0.3034473891602829,
+      "created_id": null
+    },
+    {
+      "step": 71,
+      "action": "NEW",
+      "best_id": "sp_0",
+      "best_sim": 0.16740175507341823,
+      "created_id": "sp_2"
+    },
+    {
+      "step": 72,
+      "action": "REUSE",
+      "best_id": "sp_2",
+      "best_sim": 0.9229207014044126,
+      "created_id": null
+    },
+    {
+      "step": 73,
+      "action": "REUSE",
+      "best_id": "sp_2",
+      "best_sim": 0.9412707661588987,
+      "created_id": null
+    },
+    {
+      "step": 74,
+      "action": "REUSE",
+      "best_id": "sp_2",
+      "best_sim": 0.9241745124260584,
+      "created_id": null
+    },
+    {
+      "step": 75,
+      "action": "REUSE",
+      "best_id": "sp_2",
+      "best_sim": 0.9363124370574951,
+      "created_id": null
+    },
+    {
+      "step": 76,
+      "action": "REUSE",
+      "best_id": "sp_2",
+      "best_sim": 0.9326779767870903,
+      "created_id": null
+    },
+    {
+      "step": 77,
+      "action": "REUSE",
+      "best_id": "sp_2",
+      "best_sim": 0.9261219576001167,
+      "created_id": null
+    },
+    {
+      "step": 78,
+      "action": "REUSE",
+      "best_id": "sp_2",
+      "best_sim": 0.9024490813414255,
+      "created_id": null
+    },
+    {
+      "step": 79,
+      "action": "REUSE",
+      "best_id": "sp_2",
+      "best_sim": 0.9206402624646822,
+      "created_id": null
+    },
+    {
+      "step": 80,
+      "action": "REUSE",
+      "best_id": "sp_2",
+      "best_sim": 0.9225464736421903,
+      "created_id": null
+    },
+    {
+      "step": 81,
+      "action": "REUSE",
+      "best_id": "sp_2",
+      "best_sim": 0.9231467346350352,
+      "created_id": null
+    },
+    {
+      "step": 82,
+      "action": "REUSE",
+      "best_id": "sp_2",
+      "best_sim": 0.7085086641212305,
+      "created_id": null
+    },
+    {
+      "step": 83,
+      "action": "REUSE",
+      "best_id": "sp_1",
+      "best_sim": 0.6532017762462298,
+      "created_id": null
+    },
+    {
+      "step": 84,
+      "action": "REUSE",
+      "best_id": "sp_1",
+      "best_sim": 0.6488465505341688,
+      "created_id": null
+    },
+    {
+      "step": 85,
+      "action": "NEW",
+      "best_id": "sp_1",
+      "best_sim": 0.6439588107168674,
+      "created_id": "sp_3"
+    },
+    {
+      "step": 86,
+      "action": "REUSE",
+      "best_id": "sp_3",
+      "best_sim": 0.9133971060315768,
+      "created_id": null
+    },
+    {
+      "step": 87,
+      "action": "REUSE",
+      "best_id": "sp_3",
+      "best_sim": 0.9273840487003326,
+      "created_id": null
+    },
+    {
+      "step": 88,
+      "action": "REUSE",
+      "best_id": "sp_3",
+      "best_sim": 0.8981570700804392,
+      "created_id": null
+    },
+    {
+      "step": 89,
+      "action": "REUSE",
+      "best_id": "sp_3",
+      "best_sim": 0.8848496961096922,
+      "created_id": null
+    },
+    {
+      "step": 90,
+      "action": "REUSE",
+      "best_id": "sp_3",
+      "best_sim": 0.9242617612083753,
+      "created_id": null
+    },
+    {
+      "step": 91,
+      "action": "REUSE",
+      "best_id": "sp_3",
+      "best_sim": 0.9159949993093809,
+      "created_id": null
+    },
+    {
+      "step": 92,
+      "action": "REUSE",
+      "best_id": "sp_3",
+      "best_sim": 0.9134604459007581,
+      "created_id": null
+    },
+    {
+      "step": 93,
+      "action": "REUSE",
+      "best_id": "sp_3",
+      "best_sim": 0.9133176878094673,
+      "created_id": null
+    },
+    {
+      "step": 94,
+      "action": "REUSE",
+      "best_id": "sp_3",
+      "best_sim": 0.9169794743259748,
+      "created_id": null
+    },
+    {
+      "step": 95,
+      "action": "REUSE",
+      "best_id": "sp_3",
+      "best_sim": 0.9142422477404276,
+      "created_id": null
+    },
+    {
+      "step": 96,
+      "action": "REUSE",
+      "best_id": "sp_3",
+      "best_sim": 0.9004868393143018,
+      "created_id": null
+    },
+    {
+      "step": 97,
+      "action": "REUSE",
+      "best_id": "sp_3",
+      "best_sim": 0.9145222480098406,
+      "created_id": null
+    },
+    {
+      "step": 98,
+      "action": "REUSE",
+      "best_id": "sp_3",
+      "best_sim": 0.9171893013020357,
+      "created_id": null
+    },
+    {
+      "step": 99,
+      "action": "REUSE",
+      "best_id": "sp_3",
+      "best_sim": 0.9096903105576833,
+      "created_id": null
+    },
+    {
+      "step": 100,
+      "action": "REUSE",
+      "best_id": "sp_3",
+      "best_sim": 0.9080428555607796,
+      "created_id": null
+    },
+    {
+      "step": 101,
+      "action": "REUSE",
+      "best_id": "sp_3",
+      "best_sim": 0.9227948064605395,
+      "created_id": null
+    },
+    {
+      "step": 102,
+      "action": "REUSE",
+      "best_id": "sp_3",
+      "best_sim": 0.9098945210377375,
+      "created_id": null
+    },
+    {
+      "step": 103,
+      "action": "REUSE",
+      "best_id": "sp_3",
+      "best_sim": 0.9062751916547617,
+      "created_id": null
+    },
+    {
+      "step": 104,
+      "action": "REUSE",
+      "best_id": "sp_3",
+      "best_sim": 0.9103497788310051,
+      "created_id": null
+    },
+    {
+      "step": 105,
+      "action": "REUSE",
+      "best_id": "sp_3",
+      "best_sim": 0.9072171896696091,
+      "created_id": null
+    },
+    {
+      "step": 106,
+      "action": "REUSE",
+      "best_id": "sp_3",
+      "best_sim": 0.9147222538789114,
+      "created_id": null
+    },
+    {
+      "step": 107,
+      "action": "REUSE",
+      "best_id": "sp_3",
+      "best_sim": 0.9242400502165159,
+      "created_id": null
+    },
+    {
+      "step": 108,
+      "action": "REUSE",
+      "best_id": "sp_3",
+      "best_sim": 0.9126345589756966,
+      "created_id": null
+    },
+    {
+      "step": 109,
+      "action": "REUSE",
+      "best_id": "sp_3",
+      "best_sim": 0.9155820310115814,
+      "created_id": null
+    },
+    {
+      "step": 110,
+      "action": "REUSE",
+      "best_id": "sp_3",
+      "best_sim": 0.9197388291358948,
+      "created_id": null
+    },
+    {
+      "step": 111,
+      "action": "REUSE",
+      "best_id": "sp_3",
+      "best_sim": 0.9081549967328707,
+      "created_id": null
+    },
+    {
+      "step": 112,
+      "action": "REUSE",
+      "best_id": "sp_3",
+      "best_sim": 0.865852914750576,
+      "created_id": null
+    },
+    {
+      "step": 113,
+      "action": "REUSE",
+      "best_id": "sp_3",
+      "best_sim": 0.9241958533724149,
+      "created_id": null
+    },
+    {
+      "step": 114,
+      "action": "REUSE",
+      "best_id": "sp_3",
+      "best_sim": 0.662801668047905,
+      "created_id": null
+    },
+    {
+      "step": 115,
+      "action": "EXPAND",
+      "best_id": "sp_3",
+      "best_sim": 0.6734613925218582,
+      "created_id": null
+    },
+    {
+      "step": 116,
+      "action": "REUSE",
+      "best_id": "sp_3",
+      "best_sim": 0.7933432335654894,
+      "created_id": null
+    },
+    {
+      "step": 117,
+      "action": "REUSE",
+      "best_id": "sp_3",
+      "best_sim": 0.8753091456989447,
+      "created_id": null
+    },
+    {
+      "step": 118,
+      "action": "REUSE",
+      "best_id": "sp_3",
+      "best_sim": 0.8637621824940046,
+      "created_id": null
+    },
+    {
+      "step": 119,
+      "action": "REUSE",
+      "best_id": "sp_3",
+      "best_sim": 0.8764579916993777,
+      "created_id": null
+    },
+    {
+      "step": 120,
+      "action": "REUSE",
+      "best_id": "sp_3",
+      "best_sim": 0.8405409082770348,
+      "created_id": null
+    },
+    {
+      "step": 121,
+      "action": "REUSE",
+      "best_id": "sp_3",
+      "best_sim": 0.8692919388413429,
+      "created_id": null
+    },
+    {
+      "step": 122,
+      "action": "REUSE",
+      "best_id": "sp_3",
+      "best_sim": 0.8840535233418146,
+      "created_id": null
+    },
+    {
+      "step": 123,
+      "action": "REUSE",
+      "best_id": "sp_3",
+      "best_sim": 0.8743945881724358,
+      "created_id": null
+    },
+    {
+      "step": 124,
+      "action": "REUSE",
+      "best_id": "sp_3",
+      "best_sim": 0.8673981577157974,
+      "created_id": null
+    },
+    {
+      "step": 125,
+      "action": "REUSE",
+      "best_id": "sp_3",
+      "best_sim": 0.8689108888308207,
+      "created_id": null
+    },
+    {
+      "step": 126,
+      "action": "REUSE",
+      "best_id": "sp_3",
+      "best_sim": 0.8782555237412453,
+      "created_id": null
+    },
+    {
+      "step": 127,
+      "action": "REUSE",
+      "best_id": "sp_3",
+      "best_sim": 0.8434324512879053,
+      "created_id": null
+    },
+    {
+      "step": 128,
+      "action": "REUSE",
+      "best_id": "sp_3",
+      "best_sim": 0.8806976601481438,
+      "created_id": null
+    },
+    {
+      "step": 129,
+      "action": "REUSE",
+      "best_id": "sp_3",
+      "best_sim": 0.8608429829279581,
+      "created_id": null
+    },
+    {
+      "step": 130,
+      "action": "REUSE",
+      "best_id": "sp_3",
+      "best_sim": 0.868921318401893,
+      "created_id": null
+    },
+    {
+      "step": 131,
+      "action": "REUSE",
+      "best_id": "sp_3",
+      "best_sim": 0.8629353394110998,
+      "created_id": null
+    },
+    {
+      "step": 132,
+      "action": "REUSE",
+      "best_id": "sp_3",
+      "best_sim": 0.8634654358029366,
+      "created_id": null
+    },
+    {
+      "step": 133,
+      "action": "REUSE",
+      "best_id": "sp_3",
+      "best_sim": 0.8560322895646095,
+      "created_id": null
+    },
+    {
+      "step": 134,
+      "action": "REUSE",
+      "best_id": "sp_3",
+      "best_sim": 0.8529587698479494,
+      "created_id": null
+    },
+    {
+      "step": 135,
+      "action": "REUSE",
+      "best_id": "sp_3",
+      "best_sim": 0.8259440250694752,
+      "created_id": null
+    },
+    {
+      "step": 136,
+      "action": "REUSE",
+      "best_id": "sp_3",
+      "best_sim": 0.8647567865749201,
+      "created_id": null
+    },
+    {
+      "step": 137,
+      "action": "REUSE",
+      "best_id": "sp_3",
+      "best_sim": 0.8768825493752956,
+      "created_id": null
+    },
+    {
+      "step": 138,
+      "action": "REUSE",
+      "best_id": "sp_3",
+      "best_sim": 0.8632047375043234,
+      "created_id": null
+    },
+    {
+      "step": 139,
+      "action": "REUSE",
+      "best_id": "sp_3",
+      "best_sim": 0.8688636918862661,
+      "created_id": null
+    },
+    {
+      "step": 140,
+      "action": "REUSE",
+      "best_id": "sp_3",
+      "best_sim": 0.8661595558126768,
+      "created_id": null
+    },
+    {
+      "step": 141,
+      "action": "REUSE",
+      "best_id": "sp_3",
+      "best_sim": 0.8682748178641001,
+      "created_id": null
+    },
+    {
+      "step": 142,
+      "action": "REUSE",
+      "best_id": "sp_3",
+      "best_sim": 0.8718632335464159,
+      "created_id": null
+    },
+    {
+      "step": 143,
+      "action": "REUSE",
+      "best_id": "sp_3",
+      "best_sim": 0.8784906913836797,
+      "created_id": null
+    },
+    {
+      "step": 144,
+      "action": "REUSE",
+      "best_id": "sp_3",
+      "best_sim": 0.8589288877944151,
+      "created_id": null
+    },
+    {
+      "step": 145,
+      "action": "REUSE",
+      "best_id": "sp_0",
+      "best_sim": 0.7629096731543541,
+      "created_id": null
+    },
+    {
+      "step": 146,
+      "action": "REUSE",
+      "best_id": "sp_0",
+      "best_sim": 0.8116918231050173,
+      "created_id": null
+    },
+    {
+      "step": 147,
+      "action": "REUSE",
+      "best_id": "sp_0",
+      "best_sim": 0.8240238999327024,
+      "created_id": null
+    },
+    {
+      "step": 148,
+      "action": "REUSE",
+      "best_id": "sp_0",
+      "best_sim": 0.7945302687585354,
+      "created_id": null
+    },
+    {
+      "step": 149,
+      "action": "REUSE",
+      "best_id": "sp_0",
+      "best_sim": 0.8299777433276176,
+      "created_id": null
+    },
+    {
+      "step": 150,
+      "action": "REUSE",
+      "best_id": "sp_0",
+      "best_sim": 0.8329200893640518,
+      "created_id": null
+    },
+    {
+      "step": 151,
+      "action": "REUSE",
+      "best_id": "sp_0",
+      "best_sim": 0.8192185312509537,
+      "created_id": null
+    },
+    {
+      "step": 152,
+      "action": "REUSE",
+      "best_id": "sp_0",
+      "best_sim": 0.814310739437739,
+      "created_id": null
+    },
+    {
+      "step": 153,
+      "action": "REUSE",
+      "best_id": "sp_0",
+      "best_sim": 0.7964901675780615,
+      "created_id": null
+    },
+    {
+      "step": 154,
+      "action": "REUSE",
+      "best_id": "sp_0",
+      "best_sim": 0.8303320358196894,
+      "created_id": null
+    },
+    {
+      "step": 155,
+      "action": "REUSE",
+      "best_id": "sp_0",
+      "best_sim": 0.8065200597047806,
+      "created_id": null
+    },
+    {
+      "step": 156,
+      "action": "REUSE",
+      "best_id": "sp_0",
+      "best_sim": 0.8142373735706011,
+      "created_id": null
+    },
+    {
+      "step": 157,
+      "action": "REUSE",
+      "best_id": "sp_0",
+      "best_sim": 0.8250572383403778,
+      "created_id": null
+    },
+    {
+      "step": 158,
+      "action": "REUSE",
+      "best_id": "sp_0",
+      "best_sim": 0.8356697410345078,
+      "created_id": null
+    },
+    {
+      "step": 159,
+      "action": "REUSE",
+      "best_id": "sp_0",
+      "best_sim": 0.8152073696255684,
+      "created_id": null
+    },
+    {
+      "step": 160,
+      "action": "REUSE",
+      "best_id": "sp_0",
+      "best_sim": 0.8088184222579002,
+      "created_id": null
+    },
+    {
+      "step": 161,
+      "action": "REUSE",
+      "best_id": "sp_0",
+      "best_sim": 0.8447170133392016,
+      "created_id": null
+    },
+    {
+      "step": 162,
+      "action": "REUSE",
+      "best_id": "sp_0",
+      "best_sim": 0.8034306565920512,
+      "created_id": null
+    },
+    {
+      "step": 163,
+      "action": "REUSE",
+      "best_id": "sp_0",
+      "best_sim": 0.8055878157416979,
+      "created_id": null
+    },
+    {
+      "step": 164,
+      "action": "REUSE",
+      "best_id": "sp_0",
+      "best_sim": 0.8297535131374995,
+      "created_id": null
+    },
+    {
+      "step": 165,
+      "action": "REUSE",
+      "best_id": "sp_0",
+      "best_sim": 0.8126070300738016,
+      "created_id": null
+    },
+    {
+      "step": 166,
+      "action": "REUSE",
+      "best_id": "sp_0",
+      "best_sim": 0.823120042681694,
+      "created_id": null
+    },
+    {
+      "step": 167,
+      "action": "REUSE",
+      "best_id": "sp_0",
+      "best_sim": 0.8070534740885099,
+      "created_id": null
+    },
+    {
+      "step": 168,
+      "action": "REUSE",
+      "best_id": "sp_0",
+      "best_sim": 0.8024556562304497,
+      "created_id": null
+    },
+    {
+      "step": 169,
+      "action": "REUSE",
+      "best_id": "sp_0",
+      "best_sim": 0.823398527999719,
+      "created_id": null
+    },
+    {
+      "step": 170,
+      "action": "REUSE",
+      "best_id": "sp_0",
+      "best_sim": 0.8268058548370997,
+      "created_id": null
+    },
+    {
+      "step": 171,
+      "action": "REUSE",
+      "best_id": "sp_0",
+      "best_sim": 0.8196706672509512,
+      "created_id": null
+    },
+    {
+      "step": 172,
+      "action": "REUSE",
+      "best_id": "sp_0",
+      "best_sim": 0.8334673618276914,
+      "created_id": null
+    },
+    {
+      "step": 173,
+      "action": "REUSE",
+      "best_id": "sp_0",
+      "best_sim": 0.8240234677990278,
+      "created_id": null
+    },
+    {
+      "step": 174,
+      "action": "REUSE",
+      "best_id": "sp_0",
+      "best_sim": 0.8315504019459089,
+      "created_id": null
+    },
+    {
+      "step": 175,
+      "action": "REUSE",
+      "best_id": "sp_0",
+      "best_sim": 0.804725855588913,
+      "created_id": null
+    },
+    {
+      "step": 176,
+      "action": "REUSE",
+      "best_id": "sp_0",
+      "best_sim": 0.5655777640640736,
+      "created_id": null
+    },
+    {
+      "step": 177,
+      "action": "NEW",
+      "best_id": "sp_2",
+      "best_sim": 0.3320430740714073,
+      "created_id": "sp_4"
+    },
+    {
+      "step": 178,
+      "action": "REUSE",
+      "best_id": "sp_4",
+      "best_sim": 0.7582401310404142,
+      "created_id": null
+    },
+    {
+      "step": 179,
+      "action": "REUSE",
+      "best_id": "sp_4",
+      "best_sim": 0.8310627266764641,
+      "created_id": null
+    },
+    {
+      "step": 180,
+      "action": "REUSE",
+      "best_id": "sp_4",
+      "best_sim": 0.8041976814468702,
+      "created_id": null
+    },
+    {
+      "step": 181,
+      "action": "REUSE",
+      "best_id": "sp_4",
+      "best_sim": 0.7885926278928915,
+      "created_id": null
+    },
+    {
+      "step": 182,
+      "action": "REUSE",
+      "best_id": "sp_4",
+      "best_sim": 0.8016586527228355,
+      "created_id": null
+    },
+    {
+      "step": 183,
+      "action": "REUSE",
+      "best_id": "sp_4",
+      "best_sim": 0.7551407304902872,
+      "created_id": null
+    },
+    {
+      "step": 184,
+      "action": "REUSE",
+      "best_id": "sp_4",
+      "best_sim": 0.8458771208922068,
+      "created_id": null
+    },
+    {
+      "step": 185,
+      "action": "REUSE",
+      "best_id": "sp_4",
+      "best_sim": 0.8009954939285914,
+      "created_id": null
+    },
+    {
+      "step": 186,
+      "action": "REUSE",
+      "best_id": "sp_4",
+      "best_sim": 0.731866180896759,
+      "created_id": null
+    },
+    {
+      "step": 187,
+      "action": "REUSE",
+      "best_id": "sp_4",
+      "best_sim": 0.791694757839044,
+      "created_id": null
+    },
+    {
+      "step": 188,
+      "action": "REUSE",
+      "best_id": "sp_4",
+      "best_sim": 0.7595113441348076,
+      "created_id": null
+    },
+    {
+      "step": 189,
+      "action": "REUSE",
+      "best_id": "sp_4",
+      "best_sim": 0.7735440954566002,
+      "created_id": null
+    },
+    {
+      "step": 190,
+      "action": "REUSE",
+      "best_id": "sp_4",
+      "best_sim": 0.7863572165369987,
+      "created_id": null
+    },
+    {
+      "step": 191,
+      "action": "REUSE",
+      "best_id": "sp_4",
+      "best_sim": 0.7929695000251135,
+      "created_id": null
+    },
+    {
+      "step": 192,
+      "action": "REUSE",
+      "best_id": "sp_4",
+      "best_sim": 0.7868472958604494,
+      "created_id": null
+    },
+    {
+      "step": 193,
+      "action": "REUSE",
+      "best_id": "sp_4",
+      "best_sim": 0.8278034081061681,
+      "created_id": null
+    },
+    {
+      "step": 194,
+      "action": "REUSE",
+      "best_id": "sp_4",
+      "best_sim": 0.807738204797109,
+      "created_id": null
+    },
+    {
+      "step": 195,
+      "action": "REUSE",
+      "best_id": "sp_4",
+      "best_sim": 0.7635747840007147,
+      "created_id": null
+    },
+    {
+      "step": 196,
+      "action": "EXPAND",
+      "best_id": "sp_4",
+      "best_sim": 0.8001079310973486,
+      "created_id": null
+    },
+    {
+      "step": 197,
+      "action": "REUSE",
+      "best_id": "sp_4",
+      "best_sim": 0.7095113409062227,
+      "created_id": null
+    },
+    {
+      "step": 198,
+      "action": "REUSE",
+      "best_id": "sp_4",
+      "best_sim": 0.766503514101108,
+      "created_id": null
+    },
+    {
+      "step": 199,
+      "action": "REUSE",
+      "best_id": "sp_4",
+      "best_sim": 0.7464199475944042,
+      "created_id": null
+    },
+    {
+      "step": 200,
+      "action": "REUSE",
+      "best_id": "sp_4",
+      "best_sim": 0.8336861406763395,
+      "created_id": null
+    },
+    {
+      "step": 201,
+      "action": "REUSE",
+      "best_id": "sp_4",
+      "best_sim": 0.7914048892756304,
+      "created_id": null
+    },
+    {
+      "step": 202,
+      "action": "REUSE",
+      "best_id": "sp_4",
+      "best_sim": 0.7972400610645612,
+      "created_id": null
+    },
+    {
+      "step": 203,
+      "action": "REUSE",
+      "best_id": "sp_4",
+      "best_sim": 0.7801670978466669,
+      "created_id": null
+    },
+    {
+      "step": 204,
+      "action": "REUSE",
+      "best_id": "sp_4",
+      "best_sim": 0.7637092446287473,
+      "created_id": null
+    },
+    {
+      "step": 205,
+      "action": "REUSE",
+      "best_id": "sp_4",
+      "best_sim": 0.7734977888564268,
+      "created_id": null
+    },
+    {
+      "step": 206,
+      "action": "REUSE",
+      "best_id": "sp_4",
+      "best_sim": 0.7935601994395256,
+      "created_id": null
+    },
+    {
+      "step": 207,
+      "action": "REUSE",
+      "best_id": "sp_4",
+      "best_sim": 0.7078690355022749,
+      "created_id": null
+    },
+    {
+      "step": 208,
+      "action": "REUSE",
+      "best_id": "sp_4",
+      "best_sim": 0.4760140761112173,
+      "created_id": null
+    },
+    {
+      "step": 209,
+      "action": "NEW",
+      "best_id": "sp_4",
+      "best_sim": 0.40873664307097596,
+      "created_id": "sp_5"
+    },
+    {
+      "step": 210,
+      "action": "REUSE",
+      "best_id": "sp_5",
+      "best_sim": 0.7707775980234146,
+      "created_id": null
+    },
+    {
+      "step": 211,
+      "action": "REUSE",
+      "best_id": "sp_5",
+      "best_sim": 0.8133964178462824,
+      "created_id": null
+    },
+    {
+      "step": 212,
+      "action": "REUSE",
+      "best_id": "sp_5",
+      "best_sim": 0.7827384707828363,
+      "created_id": null
+    },
+    {
+      "step": 213,
+      "action": "REUSE",
+      "best_id": "sp_5",
+      "best_sim": 0.74919593334198,
+      "created_id": null
+    },
+    {
+      "step": 214,
+      "action": "REUSE",
+      "best_id": "sp_5",
+      "best_sim": 0.7967861319581667,
+      "created_id": null
+    },
+    {
+      "step": 215,
+      "action": "REUSE",
+      "best_id": "sp_5",
+      "best_sim": 0.7999555207788944,
+      "created_id": null
+    },
+    {
+      "step": 216,
+      "action": "REUSE",
+      "best_id": "sp_5",
+      "best_sim": 0.7946904040873051,
+      "created_id": null
+    },
+    {
+      "step": 217,
+      "action": "REUSE",
+      "best_id": "sp_5",
+      "best_sim": 0.7893814345200857,
+      "created_id": null
+    },
+    {
+      "step": 218,
+      "action": "REUSE",
+      "best_id": "sp_5",
+      "best_sim": 0.8398381645480791,
+      "created_id": null
+    },
+    {
+      "step": 219,
+      "action": "REUSE",
+      "best_id": "sp_5",
+      "best_sim": 0.8094717462857565,
+      "created_id": null
+    },
+    {
+      "step": 220,
+      "action": "REUSE",
+      "best_id": "sp_5",
+      "best_sim": 0.791987548271815,
+      "created_id": null
+    },
+    {
+      "step": 221,
+      "action": "REUSE",
+      "best_id": "sp_5",
+      "best_sim": 0.7425868374605974,
+      "created_id": null
+    },
+    {
+      "step": 222,
+      "action": "REUSE",
+      "best_id": "sp_5",
+      "best_sim": 0.7735219510893027,
+      "created_id": null
+    },
+    {
+      "step": 223,
+      "action": "REUSE",
+      "best_id": "sp_5",
+      "best_sim": 0.7822576202452183,
+      "created_id": null
+    },
+    {
+      "step": 224,
+      "action": "REUSE",
+      "best_id": "sp_5",
+      "best_sim": 0.7888618086775144,
+      "created_id": null
+    },
+    {
+      "step": 225,
+      "action": "REUSE",
+      "best_id": "sp_5",
+      "best_sim": 0.7745360744496187,
+      "created_id": null
+    },
+    {
+      "step": 226,
+      "action": "REUSE",
+      "best_id": "sp_5",
+      "best_sim": 0.7837384715676308,
+      "created_id": null
+    },
+    {
+      "step": 227,
+      "action": "REUSE",
+      "best_id": "sp_5",
+      "best_sim": 0.7826791815459728,
+      "created_id": null
+    },
+    {
+      "step": 228,
+      "action": "REUSE",
+      "best_id": "sp_5",
+      "best_sim": 0.7454612404108047,
+      "created_id": null
+    },
+    {
+      "step": 229,
+      "action": "REUSE",
+      "best_id": "sp_5",
+      "best_sim": 0.8203549732764562,
+      "created_id": null
+    },
+    {
+      "step": 230,
+      "action": "REUSE",
+      "best_id": "sp_5",
+      "best_sim": 0.8150641409059366,
+      "created_id": null
+    },
+    {
+      "step": 231,
+      "action": "REUSE",
+      "best_id": "sp_5",
+      "best_sim": 0.776025486489137,
+      "created_id": null
+    },
+    {
+      "step": 232,
+      "action": "REUSE",
+      "best_id": "sp_5",
+      "best_sim": 0.7589547894895077,
+      "created_id": null
+    },
+    {
+      "step": 233,
+      "action": "REUSE",
+      "best_id": "sp_5",
+      "best_sim": 0.8207042006154855,
+      "created_id": null
+    },
+    {
+      "step": 234,
+      "action": "REUSE",
+      "best_id": "sp_5",
+      "best_sim": 0.7296373235682646,
+      "created_id": null
+    },
+    {
+      "step": 235,
+      "action": "REUSE",
+      "best_id": "sp_5",
+      "best_sim": 0.7989164541165034,
+      "created_id": null
+    },
+    {
+      "step": 236,
+      "action": "REUSE",
+      "best_id": "sp_5",
+      "best_sim": 0.8098671038945516,
+      "created_id": null
+    },
+    {
+      "step": 237,
+      "action": "REUSE",
+      "best_id": "sp_5",
+      "best_sim": 0.7835020758211613,
+      "created_id": null
+    },
+    {
+      "step": 238,
+      "action": "REUSE",
+      "best_id": "sp_5",
+      "best_sim": 0.7953427794078985,
+      "created_id": null
+    },
+    {
+      "step": 239,
+      "action": "REUSE",
+      "best_id": "sp_5",
+      "best_sim": 0.6893569193780422,
+      "created_id": null
+    },
+    {
+      "step": 240,
+      "action": "REUSE",
+      "best_id": "sp_5",
+      "best_sim": 0.7237092119952043,
+      "created_id": null
+    },
+    {
+      "step": 241,
+      "action": "REUSE",
+      "best_id": "sp_5",
+      "best_sim": 0.708633246521155,
+      "created_id": null
+    },
+    {
+      "step": 242,
+      "action": "REUSE",
+      "best_id": "sp_5",
+      "best_sim": 0.6871671850482622,
+      "created_id": null
+    },
+    {
+      "step": 243,
+      "action": "REUSE",
+      "best_id": "sp_5",
+      "best_sim": 0.691636131455501,
+      "created_id": null
+    },
+    {
+      "step": 244,
+      "action": "REUSE",
+      "best_id": "sp_5",
+      "best_sim": 0.6852001907924811,
+      "created_id": null
+    },
+    {
+      "step": 245,
+      "action": "REUSE",
+      "best_id": "sp_5",
+      "best_sim": 0.7083831963439783,
+      "created_id": null
+    },
+    {
+      "step": 246,
+      "action": "REUSE",
+      "best_id": "sp_5",
+      "best_sim": 0.6873742304742336,
+      "created_id": null
+    },
+    {
+      "step": 247,
+      "action": "REUSE",
+      "best_id": "sp_5",
+      "best_sim": 0.6952769396205744,
+      "created_id": null
+    },
+    {
+      "step": 248,
+      "action": "REUSE",
+      "best_id": "sp_5",
+      "best_sim": 0.6718774934609731,
+      "created_id": null
+    },
+    {
+      "step": 249,
+      "action": "REUSE",
+      "best_id": "sp_5",
+      "best_sim": 0.6760856894155344,
+      "created_id": null
+    },
+    {
+      "step": 250,
+      "action": "REUSE",
+      "best_id": "sp_5",
+      "best_sim": 0.6639235839247704,
+      "created_id": null
+    },
+    {
+      "step": 251,
+      "action": "REUSE",
+      "best_id": "sp_5",
+      "best_sim": 0.7310553267598152,
+      "created_id": null
+    },
+    {
+      "step": 252,
+      "action": "REUSE",
+      "best_id": "sp_5",
+      "best_sim": 0.7024580563108126,
+      "created_id": null
+    },
+    {
+      "step": 253,
+      "action": "REUSE",
+      "best_id": "sp_5",
+      "best_sim": 0.6863126264264187,
+      "created_id": null
+    },
+    {
+      "step": 254,
+      "action": "REUSE",
+      "best_id": "sp_5",
+      "best_sim": 0.649808323631684,
+      "created_id": null
+    },
+    {
+      "step": 255,
+      "action": "REUSE",
+      "best_id": "sp_5",
+      "best_sim": 0.6905246414244175,
+      "created_id": null
+    },
+    {
+      "step": 256,
+      "action": "REUSE",
+      "best_id": "sp_5",
+      "best_sim": 0.7200391416748365,
+      "created_id": null
+    },
+    {
+      "step": 257,
+      "action": "REUSE",
+      "best_id": "sp_5",
+      "best_sim": 0.6644525316854318,
+      "created_id": null
+    },
+    {
+      "step": 258,
+      "action": "REUSE",
+      "best_id": "sp_5",
+      "best_sim": 0.6807406879961491,
+      "created_id": null
+    },
+    {
+      "step": 259,
+      "action": "REUSE",
+      "best_id": "sp_5",
+      "best_sim": 0.7109528630971909,
+      "created_id": null
+    },
+    {
+      "step": 260,
+      "action": "REUSE",
+      "best_id": "sp_5",
+      "best_sim": 0.6859372816979885,
+      "created_id": null
+    },
+    {
+      "step": 261,
+      "action": "REUSE",
+      "best_id": "sp_5",
+      "best_sim": 0.6938661883274714,
+      "created_id": null
+    },
+    {
+      "step": 262,
+      "action": "REUSE",
+      "best_id": "sp_5",
+      "best_sim": 0.7237270412345728,
+      "created_id": null
+    },
+    {
+      "step": 263,
+      "action": "REUSE",
+      "best_id": "sp_5",
+      "best_sim": 0.7074310084184011,
+      "created_id": null
+    },
+    {
+      "step": 264,
+      "action": "REUSE",
+      "best_id": "sp_5",
+      "best_sim": 0.6952714535097281,
+      "created_id": null
+    },
+    {
+      "step": 265,
+      "action": "REUSE",
+      "best_id": "sp_5",
+      "best_sim": 0.7209038337071737,
+      "created_id": null
+    },
+    {
+      "step": 266,
+      "action": "REUSE",
+      "best_id": "sp_5",
+      "best_sim": 0.6948317649463812,
+      "created_id": null
+    },
+    {
+      "step": 267,
+      "action": "REUSE",
+      "best_id": "sp_5",
+      "best_sim": 0.6801487356424332,
+      "created_id": null
+    },
+    {
+      "step": 268,
+      "action": "REUSE",
+      "best_id": "sp_5",
+      "best_sim": 0.7065837706128756,
+      "created_id": null
+    },
+    {
+      "step": 269,
+      "action": "REUSE",
+      "best_id": "sp_5",
+      "best_sim": 0.6968323911229769,
+      "created_id": null
+    },
+    {
+      "step": 270,
+      "action": "REUSE",
+      "best_id": "sp_5",
+      "best_sim": 0.5612626373767853,
+      "created_id": null
+    },
+    {
+      "step": 271,
+      "action": "NEW",
+      "best_id": "sp_4",
+      "best_sim": 0.5239189602434635,
+      "created_id": "sp_6"
+    },
+    {
+      "step": 272,
+      "action": "REUSE",
+      "best_id": "sp_6",
+      "best_sim": 0.8225174322724342,
+      "created_id": null
+    },
+    {
+      "step": 273,
+      "action": "REUSE",
+      "best_id": "sp_6",
+      "best_sim": 0.8482819497585297,
+      "created_id": null
+    },
+    {
+      "step": 274,
+      "action": "REUSE",
+      "best_id": "sp_6",
+      "best_sim": 0.8340843816598257,
+      "created_id": null
+    },
+    {
+      "step": 275,
+      "action": "REUSE",
+      "best_id": "sp_6",
+      "best_sim": 0.8382543077071508,
+      "created_id": null
+    },
+    {
+      "step": 276,
+      "action": "REUSE",
+      "best_id": "sp_6",
+      "best_sim": 0.9013070488969485,
+      "created_id": null
+    },
+    {
+      "step": 277,
+      "action": "REUSE",
+      "best_id": "sp_6",
+      "best_sim": 0.9000865742564201,
+      "created_id": null
+    },
+    {
+      "step": 278,
+      "action": "REUSE",
+      "best_id": "sp_6",
+      "best_sim": 0.896074041724205,
+      "created_id": null
+    },
+    {
+      "step": 279,
+      "action": "REUSE",
+      "best_id": "sp_6",
+      "best_sim": 0.8362811331947645,
+      "created_id": null
+    },
+    {
+      "step": 280,
+      "action": "REUSE",
+      "best_id": "sp_6",
+      "best_sim": 0.8723792061209679,
+      "created_id": null
+    },
+    {
+      "step": 281,
+      "action": "REUSE",
+      "best_id": "sp_6",
+      "best_sim": 0.8786587690313657,
+      "created_id": null
+    },
+    {
+      "step": 282,
+      "action": "REUSE",
+      "best_id": "sp_6",
+      "best_sim": 0.7947214717666308,
+      "created_id": null
+    },
+    {
+      "step": 283,
+      "action": "REUSE",
+      "best_id": "sp_6",
+      "best_sim": 0.876206656297048,
+      "created_id": null
+    },
+    {
+      "step": 284,
+      "action": "REUSE",
+      "best_id": "sp_6",
+      "best_sim": 0.8632094512383143,
+      "created_id": null
+    },
+    {
+      "step": 285,
+      "action": "REUSE",
+      "best_id": "sp_6",
+      "best_sim": 0.8744769419233004,
+      "created_id": null
+    },
+    {
+      "step": 286,
+      "action": "REUSE",
+      "best_id": "sp_6",
+      "best_sim": 0.8978897134462992,
+      "created_id": null
+    },
+    {
+      "step": 287,
+      "action": "REUSE",
+      "best_id": "sp_6",
+      "best_sim": 0.9007497628529867,
+      "created_id": null
+    },
+    {
+      "step": 288,
+      "action": "REUSE",
+      "best_id": "sp_6",
+      "best_sim": 0.8444807206590971,
+      "created_id": null
+    },
+    {
+      "step": 289,
+      "action": "REUSE",
+      "best_id": "sp_6",
+      "best_sim": 0.8643275772531828,
+      "created_id": null
+    },
+    {
+      "step": 290,
+      "action": "REUSE",
+      "best_id": "sp_6",
+      "best_sim": 0.8682624325156212,
+      "created_id": null
+    },
+    {
+      "step": 291,
+      "action": "REUSE",
+      "best_id": "sp_6",
+      "best_sim": 0.8236218417684237,
+      "created_id": null
+    },
+    {
+      "step": 292,
+      "action": "EXPAND",
+      "best_id": "sp_6",
+      "best_sim": 0.834045390288035,
+      "created_id": null
+    },
+    {
+      "step": 293,
+      "action": "REUSE",
+      "best_id": "sp_6",
+      "best_sim": 0.7742125230530897,
+      "created_id": null
+    },
+    {
+      "step": 294,
+      "action": "REUSE",
+      "best_id": "sp_6",
+      "best_sim": 0.8290587092439333,
+      "created_id": null
+    },
+    {
+      "step": 295,
+      "action": "REUSE",
+      "best_id": "sp_6",
+      "best_sim": 0.8403854295611382,
+      "created_id": null
+    },
+    {
+      "step": 296,
+      "action": "REUSE",
+      "best_id": "sp_6",
+      "best_sim": 0.8184217661619186,
+      "created_id": null
+    },
+    {
+      "step": 297,
+      "action": "REUSE",
+      "best_id": "sp_6",
+      "best_sim": 0.800262683381637,
+      "created_id": null
+    },
+    {
+      "step": 298,
+      "action": "REUSE",
+      "best_id": "sp_6",
+      "best_sim": 0.8173655544718107,
+      "created_id": null
+    },
+    {
+      "step": 299,
+      "action": "REUSE",
+      "best_id": "sp_6",
+      "best_sim": 0.8951876858870188,
+      "created_id": null
+    },
+    {
+      "step": 300,
+      "action": "REUSE",
+      "best_id": "sp_6",
+      "best_sim": 0.8868731881181399,
+      "created_id": null
+    },
+    {
+      "step": 301,
+      "action": "REUSE",
+      "best_id": "sp_6",
+      "best_sim": 0.5401049330830574,
+      "created_id": null
+    },
+    {
+      "step": 302,
+      "action": "NEW",
+      "best_id": "sp_4",
+      "best_sim": 0.4070644211024046,
+      "created_id": "sp_7"
+    },
+    {
+      "step": 303,
+      "action": "REUSE",
+      "best_id": "sp_7",
+      "best_sim": 0.7856093607842922,
+      "created_id": null
+    },
+    {
+      "step": 304,
+      "action": "REUSE",
+      "best_id": "sp_7",
+      "best_sim": 0.713447917252779,
+      "created_id": null
+    },
+    {
+      "step": 305,
+      "action": "REUSE",
+      "best_id": "sp_7",
+      "best_sim": 0.7849650979042053,
+      "created_id": null
+    },
+    {
+      "step": 306,
+      "action": "REUSE",
+      "best_id": "sp_7",
+      "best_sim": 0.7855121791362762,
+      "created_id": null
+    },
+    {
+      "step": 307,
+      "action": "REUSE",
+      "best_id": "sp_7",
+      "best_sim": 0.7608422065774599,
+      "created_id": null
+    },
+    {
+      "step": 308,
+      "action": "REUSE",
+      "best_id": "sp_7",
+      "best_sim": 0.7234784103929996,
+      "created_id": null
+    },
+    {
+      "step": 309,
+      "action": "REUSE",
+      "best_id": "sp_7",
+      "best_sim": 0.7399039777616659,
+      "created_id": null
+    },
+    {
+      "step": 310,
+      "action": "REUSE",
+      "best_id": "sp_7",
+      "best_sim": 0.8154158567388853,
+      "created_id": null
+    },
+    {
+      "step": 311,
+      "action": "REUSE",
+      "best_id": "sp_7",
+      "best_sim": 0.7518076375126839,
+      "created_id": null
+    },
+    {
+      "step": 312,
+      "action": "REUSE",
+      "best_id": "sp_7",
+      "best_sim": 0.8033353835344315,
+      "created_id": null
+    },
+    {
+      "step": 313,
+      "action": "REUSE",
+      "best_id": "sp_7",
+      "best_sim": 0.7879263410965601,
+      "created_id": null
+    },
+    {
+      "step": 314,
+      "action": "REUSE",
+      "best_id": "sp_7",
+      "best_sim": 0.8028049791852633,
+      "created_id": null
+    },
+    {
+      "step": 315,
+      "action": "REUSE",
+      "best_id": "sp_7",
+      "best_sim": 0.7277478526035944,
+      "created_id": null
+    },
+    {
+      "step": 316,
+      "action": "REUSE",
+      "best_id": "sp_7",
+      "best_sim": 0.7707581594586372,
+      "created_id": null
+    },
+    {
+      "step": 317,
+      "action": "REUSE",
+      "best_id": "sp_7",
+      "best_sim": 0.8039099251230558,
+      "created_id": null
+    },
+    {
+      "step": 318,
+      "action": "REUSE",
+      "best_id": "sp_7",
+      "best_sim": 0.7896841205656528,
+      "created_id": null
+    },
+    {
+      "step": 319,
+      "action": "REUSE",
+      "best_id": "sp_7",
+      "best_sim": 0.7401161044836044,
+      "created_id": null
+    },
+    {
+      "step": 320,
+      "action": "REUSE",
+      "best_id": "sp_7",
+      "best_sim": 0.8197569511830807,
+      "created_id": null
+    },
+    {
+      "step": 321,
+      "action": "REUSE",
+      "best_id": "sp_7",
+      "best_sim": 0.6993866649766763,
+      "created_id": null
+    },
+    {
+      "step": 322,
+      "action": "REUSE",
+      "best_id": "sp_7",
+      "best_sim": 0.8037836651007334,
+      "created_id": null
+    },
+    {
+      "step": 323,
+      "action": "REUSE",
+      "best_id": "sp_7",
+      "best_sim": 0.762674517929554,
+      "created_id": null
+    },
+    {
+      "step": 324,
+      "action": "REUSE",
+      "best_id": "sp_7",
+      "best_sim": 0.8339172154664993,
+      "created_id": null
+    },
+    {
+      "step": 325,
+      "action": "REUSE",
+      "best_id": "sp_7",
+      "best_sim": 0.8019227969149748,
+      "created_id": null
+    },
+    {
+      "step": 326,
+      "action": "REUSE",
+      "best_id": "sp_7",
+      "best_sim": 0.7383152556916078,
+      "created_id": null
+    },
+    {
+      "step": 327,
+      "action": "REUSE",
+      "best_id": "sp_7",
+      "best_sim": 0.796211459984382,
+      "created_id": null
+    },
+    {
+      "step": 328,
+      "action": "REUSE",
+      "best_id": "sp_7",
+      "best_sim": 0.7985519158343474,
+      "created_id": null
+    },
+    {
+      "step": 329,
+      "action": "REUSE",
+      "best_id": "sp_7",
+      "best_sim": 0.8109093805154165,
+      "created_id": null
+    },
+    {
+      "step": 330,
+      "action": "REUSE",
+      "best_id": "sp_7",
+      "best_sim": 0.78859893232584,
+      "created_id": null
+    },
+    {
+      "step": 331,
+      "action": "REUSE",
+      "best_id": "sp_7",
+      "best_sim": 0.7591956369578838,
+      "created_id": null
+    },
+    {
+      "step": 332,
+      "action": "REUSE",
+      "best_id": "sp_7",
+      "best_sim": 0.6858718879520893,
+      "created_id": null
+    },
+    {
+      "step": 333,
+      "action": "REUSE",
+      "best_id": "sp_7",
+      "best_sim": 0.46649101935327053,
+      "created_id": null
+    },
+    {
+      "step": 334,
+      "action": "NEW",
+      "best_id": "sp_7",
+      "best_sim": 0.5020671188831329,
+      "created_id": "sp_8"
+    },
+    {
+      "step": 335,
+      "action": "REUSE",
+      "best_id": "sp_8",
+      "best_sim": 0.8534028381109238,
+      "created_id": null
+    },
+    {
+      "step": 336,
+      "action": "REUSE",
+      "best_id": "sp_8",
+      "best_sim": 0.8940418685475985,
+      "created_id": null
+    },
+    {
+      "step": 337,
+      "action": "REUSE",
+      "best_id": "sp_8",
+      "best_sim": 0.875460388759772,
+      "created_id": null
+    },
+    {
+      "step": 338,
+      "action": "REUSE",
+      "best_id": "sp_8",
+      "best_sim": 0.8488309234380722,
+      "created_id": null
+    },
+    {
+      "step": 339,
+      "action": "REUSE",
+      "best_id": "sp_8",
+      "best_sim": 0.8493613588313261,
+      "created_id": null
+    },
+    {
+      "step": 340,
+      "action": "REUSE",
+      "best_id": "sp_8",
+      "best_sim": 0.8753991226355234,
+      "created_id": null
+    },
+    {
+      "step": 341,
+      "action": "REUSE",
+      "best_id": "sp_8",
+      "best_sim": 0.8674260353048643,
+      "created_id": null
+    },
+    {
+      "step": 342,
+      "action": "REUSE",
+      "best_id": "sp_8",
+      "best_sim": 0.840891412148873,
+      "created_id": null
+    },
+    {
+      "step": 343,
+      "action": "REUSE",
+      "best_id": "sp_8",
+      "best_sim": 0.804660993317763,
+      "created_id": null
+    },
+    {
+      "step": 344,
+      "action": "REUSE",
+      "best_id": "sp_8",
+      "best_sim": 0.7921257764101028,
+      "created_id": null
+    },
+    {
+      "step": 345,
+      "action": "REUSE",
+      "best_id": "sp_8",
+      "best_sim": 0.8760460515817007,
+      "created_id": null
+    },
+    {
+      "step": 346,
+      "action": "REUSE",
+      "best_id": "sp_8",
+      "best_sim": 0.8679973855614662,
+      "created_id": null
+    },
+    {
+      "step": 347,
+      "action": "REUSE",
+      "best_id": "sp_8",
+      "best_sim": 0.8609196742375692,
+      "created_id": null
+    },
+    {
+      "step": 348,
+      "action": "REUSE",
+      "best_id": "sp_8",
+      "best_sim": 0.8654702107111613,
+      "created_id": null
+    },
+    {
+      "step": 349,
+      "action": "REUSE",
+      "best_id": "sp_8",
+      "best_sim": 0.8236534893512726,
+      "created_id": null
+    },
+    {
+      "step": 350,
+      "action": "REUSE",
+      "best_id": "sp_8",
+      "best_sim": 0.8616303553183874,
+      "created_id": null
+    },
+    {
+      "step": 351,
+      "action": "REUSE",
+      "best_id": "sp_8",
+      "best_sim": 0.8666769390304884,
+      "created_id": null
+    },
+    {
+      "step": 352,
+      "action": "REUSE",
+      "best_id": "sp_8",
+      "best_sim": 0.8327269392708937,
+      "created_id": null
+    },
+    {
+      "step": 353,
+      "action": "REUSE",
+      "best_id": "sp_8",
+      "best_sim": 0.8292183578014374,
+      "created_id": null
+    },
+    {
+      "step": 354,
+      "action": "REUSE",
+      "best_id": "sp_8",
+      "best_sim": 0.8298591375350952,
+      "created_id": null
+    },
+    {
+      "step": 355,
+      "action": "REUSE",
+      "best_id": "sp_8",
+      "best_sim": 0.842164064447085,
+      "created_id": null
+    },
+    {
+      "step": 356,
+      "action": "REUSE",
+      "best_id": "sp_8",
+      "best_sim": 0.8722906435529391,
+      "created_id": null
+    },
+    {
+      "step": 357,
+      "action": "REUSE",
+      "best_id": "sp_8",
+      "best_sim": 0.8429207702477773,
+      "created_id": null
+    },
+    {
+      "step": 358,
+      "action": "REUSE",
+      "best_id": "sp_8",
+      "best_sim": 0.8309435397386551,
+      "created_id": null
+    },
+    {
+      "step": 359,
+      "action": "REUSE",
+      "best_id": "sp_8",
+      "best_sim": 0.8329276889562607,
+      "created_id": null
+    },
+    {
+      "step": 360,
+      "action": "REUSE",
+      "best_id": "sp_8",
+      "best_sim": 0.8030350729823112,
+      "created_id": null
+    },
+    {
+      "step": 361,
+      "action": "REUSE",
+      "best_id": "sp_8",
+      "best_sim": 0.8135384817918142,
+      "created_id": null
+    },
+    {
+      "step": 362,
+      "action": "REUSE",
+      "best_id": "sp_8",
+      "best_sim": 0.8555490399400393,
+      "created_id": null
+    },
+    {
+      "step": 363,
+      "action": "REUSE",
+      "best_id": "sp_8",
+      "best_sim": 0.8514512355128924,
+      "created_id": null
+    },
+    {
+      "step": 364,
+      "action": "REUSE",
+      "best_id": "sp_3",
+      "best_sim": 0.49208402819931507,
+      "created_id": null
+    },
+    {
+      "step": 365,
+      "action": "NEW",
+      "best_id": "sp_3",
+      "best_sim": 0.64104263484478,
+      "created_id": "sp_9"
+    },
+    {
+      "step": 366,
+      "action": "REUSE",
+      "best_id": "sp_9",
+      "best_sim": 0.847137376666069,
+      "created_id": null
+    },
+    {
+      "step": 367,
+      "action": "REUSE",
+      "best_id": "sp_9",
+      "best_sim": 0.8425852507352829,
+      "created_id": null
+    },
+    {
+      "step": 368,
+      "action": "REUSE",
+      "best_id": "sp_9",
+      "best_sim": 0.861699807147185,
+      "created_id": null
+    },
+    {
+      "step": 369,
+      "action": "REUSE",
+      "best_id": "sp_9",
+      "best_sim": 0.855054554839929,
+      "created_id": null
+    },
+    {
+      "step": 370,
+      "action": "REUSE",
+      "best_id": "sp_9",
+      "best_sim": 0.7862175107002258,
+      "created_id": null
+    },
+    {
+      "step": 371,
+      "action": "REUSE",
+      "best_id": "sp_9",
+      "best_sim": 0.841615063448747,
+      "created_id": null
+    },
+    {
+      "step": 372,
+      "action": "REUSE",
+      "best_id": "sp_9",
+      "best_sim": 0.8666056767106056,
+      "created_id": null
+    },
+    {
+      "step": 373,
+      "action": "REUSE",
+      "best_id": "sp_9",
+      "best_sim": 0.8406488423546156,
+      "created_id": null
+    },
+    {
+      "step": 374,
+      "action": "REUSE",
+      "best_id": "sp_9",
+      "best_sim": 0.8502012814084688,
+      "created_id": null
+    },
+    {
+      "step": 375,
+      "action": "REUSE",
+      "best_id": "sp_9",
+      "best_sim": 0.8441874956091245,
+      "created_id": null
+    },
+    {
+      "step": 376,
+      "action": "REUSE",
+      "best_id": "sp_9",
+      "best_sim": 0.9052674199144045,
+      "created_id": null
+    },
+    {
+      "step": 377,
+      "action": "REUSE",
+      "best_id": "sp_9",
+      "best_sim": 0.832534355421861,
+      "created_id": null
+    },
+    {
+      "step": 378,
+      "action": "REUSE",
+      "best_id": "sp_9",
+      "best_sim": 0.8765976975361506,
+      "created_id": null
+    },
+    {
+      "step": 379,
+      "action": "REUSE",
+      "best_id": "sp_9",
+      "best_sim": 0.8587469160556793,
+      "created_id": null
+    },
+    {
+      "step": 380,
+      "action": "REUSE",
+      "best_id": "sp_9",
+      "best_sim": 0.8717694878578186,
+      "created_id": null
+    },
+    {
+      "step": 381,
+      "action": "REUSE",
+      "best_id": "sp_9",
+      "best_sim": 0.8618733733892441,
+      "created_id": null
+    },
+    {
+      "step": 382,
+      "action": "REUSE",
+      "best_id": "sp_9",
+      "best_sim": 0.8299851268529892,
+      "created_id": null
+    },
+    {
+      "step": 383,
+      "action": "EXPAND",
+      "best_id": "sp_9",
+      "best_sim": 0.841629259288311,
+      "created_id": null
+    },
+    {
+      "step": 384,
+      "action": "REUSE",
+      "best_id": "sp_9",
+      "best_sim": 0.8687393193443617,
+      "created_id": null
+    },
+    {
+      "step": 385,
+      "action": "REUSE",
+      "best_id": "sp_9",
+      "best_sim": 0.8821967840194702,
+      "created_id": null
+    },
+    {
+      "step": 386,
+      "action": "REUSE",
+      "best_id": "sp_9",
+      "best_sim": 0.8948377445340157,
+      "created_id": null
+    },
+    {
+      "step": 387,
+      "action": "REUSE",
+      "best_id": "sp_9",
+      "best_sim": 0.8368886932730675,
+      "created_id": null
+    },
+    {
+      "step": 388,
+      "action": "REUSE",
+      "best_id": "sp_9",
+      "best_sim": 0.9134385337432226,
+      "created_id": null
+    },
+    {
+      "step": 389,
+      "action": "REUSE",
+      "best_id": "sp_9",
+      "best_sim": 0.9013904829819998,
+      "created_id": null
+    },
+    {
+      "step": 390,
+      "action": "REUSE",
+      "best_id": "sp_9",
+      "best_sim": 0.8731818373004595,
+      "created_id": null
+    },
+    {
+      "step": 391,
+      "action": "REUSE",
+      "best_id": "sp_9",
+      "best_sim": 0.8960583359003067,
+      "created_id": null
+    },
+    {
+      "step": 392,
+      "action": "REUSE",
+      "best_id": "sp_9",
+      "best_sim": 0.9064711978038152,
+      "created_id": null
+    },
+    {
+      "step": 393,
+      "action": "REUSE",
+      "best_id": "sp_9",
+      "best_sim": 0.899753158291181,
+      "created_id": null
+    },
+    {
+      "step": 394,
+      "action": "REUSE",
+      "best_id": "sp_9",
+      "best_sim": 0.8786139140526453,
+      "created_id": null
+    },
+    {
+      "step": 395,
+      "action": "REUSE",
+      "best_id": "sp_8",
+      "best_sim": 0.40784939999381703,
+      "created_id": null
+    },
+    {
+      "step": 396,
+      "action": "NEW",
+      "best_id": "sp_8",
+      "best_sim": 0.3953408046315114,
+      "created_id": "sp_10"
+    },
+    {
+      "step": 397,
+      "action": "REUSE",
+      "best_id": "sp_10",
+      "best_sim": 0.8082360948125521,
+      "created_id": null
+    },
+    {
+      "step": 398,
+      "action": "REUSE",
+      "best_id": "sp_10",
+      "best_sim": 0.7420387963453928,
+      "created_id": null
+    },
+    {
+      "step": 399,
+      "action": "REUSE",
+      "best_id": "sp_10",
+      "best_sim": 0.7263194943467776,
+      "created_id": null
+    },
+    {
+      "step": 400,
+      "action": "REUSE",
+      "best_id": "sp_10",
+      "best_sim": 0.7498551967243353,
+      "created_id": null
+    },
+    {
+      "step": 401,
+      "action": "REUSE",
+      "best_id": "sp_10",
+      "best_sim": 0.7442480511963367,
+      "created_id": null
+    },
+    {
+      "step": 402,
+      "action": "REUSE",
+      "best_id": "sp_10",
+      "best_sim": 0.7866110106309255,
+      "created_id": null
+    },
+    {
+      "step": 403,
+      "action": "REUSE",
+      "best_id": "sp_10",
+      "best_sim": 0.7247196162740389,
+      "created_id": null
+    },
+    {
+      "step": 404,
+      "action": "REUSE",
+      "best_id": "sp_10",
+      "best_sim": 0.757462166249752,
+      "created_id": null
+    },
+    {
+      "step": 405,
+      "action": "REUSE",
+      "best_id": "sp_10",
+      "best_sim": 0.7458448049922785,
+      "created_id": null
+    },
+    {
+      "step": 406,
+      "action": "REUSE",
+      "best_id": "sp_10",
+      "best_sim": 0.762930349757274,
+      "created_id": null
+    },
+    {
+      "step": 407,
+      "action": "REUSE",
+      "best_id": "sp_10",
+      "best_sim": 0.7685260338087877,
+      "created_id": null
+    },
+    {
+      "step": 408,
+      "action": "REUSE",
+      "best_id": "sp_10",
+      "best_sim": 0.7620910406112671,
+      "created_id": null
+    },
+    {
+      "step": 409,
+      "action": "REUSE",
+      "best_id": "sp_10",
+      "best_sim": 0.7544722482562065,
+      "created_id": null
+    },
+    {
+      "step": 410,
+      "action": "REUSE",
+      "best_id": "sp_10",
+      "best_sim": 0.7131400431195895,
+      "created_id": null
+    },
+    {
+      "step": 411,
+      "action": "REUSE",
+      "best_id": "sp_10",
+      "best_sim": 0.7817531079053879,
+      "created_id": null
+    },
+    {
+      "step": 412,
+      "action": "REUSE",
+      "best_id": "sp_10",
+      "best_sim": 0.746577308823665,
+      "created_id": null
+    },
+    {
+      "step": 413,
+      "action": "REUSE",
+      "best_id": "sp_10",
+      "best_sim": 0.7434835111101469,
+      "created_id": null
+    },
+    {
+      "step": 414,
+      "action": "REUSE",
+      "best_id": "sp_10",
+      "best_sim": 0.7735326265295347,
+      "created_id": null
+    },
+    {
+      "step": 415,
+      "action": "REUSE",
+      "best_id": "sp_10",
+      "best_sim": 0.7376186984280745,
+      "created_id": null
+    },
+    {
+      "step": 416,
+      "action": "REUSE",
+      "best_id": "sp_10",
+      "best_sim": 0.753441813091437,
+      "created_id": null
+    },
+    {
+      "step": 417,
+      "action": "REUSE",
+      "best_id": "sp_10",
+      "best_sim": 0.745919248710076,
+      "created_id": null
+    },
+    {
+      "step": 418,
+      "action": "REUSE",
+      "best_id": "sp_10",
+      "best_sim": 0.7659690541525682,
+      "created_id": null
+    },
+    {
+      "step": 419,
+      "action": "REUSE",
+      "best_id": "sp_10",
+      "best_sim": 0.7405082322657108,
+      "created_id": null
+    },
+    {
+      "step": 420,
+      "action": "REUSE",
+      "best_id": "sp_10",
+      "best_sim": 0.7467795225481192,
+      "created_id": null
+    },
+    {
+      "step": 421,
+      "action": "REUSE",
+      "best_id": "sp_10",
+      "best_sim": 0.7162759105364481,
+      "created_id": null
+    },
+    {
+      "step": 422,
+      "action": "REUSE",
+      "best_id": "sp_10",
+      "best_sim": 0.7609810009598732,
+      "created_id": null
+    },
+    {
+      "step": 423,
+      "action": "REUSE",
+      "best_id": "sp_10",
+      "best_sim": 0.7726627799371878,
+      "created_id": null
+    },
+    {
+      "step": 424,
+      "action": "REUSE",
+      "best_id": "sp_10",
+      "best_sim": 0.7247805198033651,
+      "created_id": null
+    },
+    {
+      "step": 425,
+      "action": "REUSE",
+      "best_id": "sp_10",
+      "best_sim": 0.7600526312987009,
+      "created_id": null
+    },
+    {
+      "step": 426,
+      "action": "REUSE",
+      "best_id": "sp_10",
+      "best_sim": 0.7218523087600867,
+      "created_id": null
+    }
+  ]
+}

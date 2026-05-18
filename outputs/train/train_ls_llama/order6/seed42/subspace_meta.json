@@ -1,0 +1,52 @@
+{
+  "sp_0": {
+    "rank": 128,
+    "max_optimizer_steps": null,
+    "optimizer_steps_done": 0
+  },
+  "sp_1": {
+    "rank": 128,
+    "max_optimizer_steps": null,
+    "optimizer_steps_done": 0
+  },
+  "sp_2": {
+    "rank": 128,
+    "max_optimizer_steps": null,
+    "optimizer_steps_done": 0
+  },
+  "sp_3": {
+    "rank": 136,
+    "max_optimizer_steps": null,
+    "optimizer_steps_done": 0
+  },
+  "sp_4": {
+    "rank": 128,
+    "max_optimizer_steps": null,
+    "optimizer_steps_done": 0
+  },
+  "sp_5": {
+    "rank": 128,
+    "max_optimizer_steps": null,
+    "optimizer_steps_done": 0
+  },
+  "sp_6": {
+    "rank": 128,
+    "max_optimizer_steps": null,
+    "optimizer_steps_done": 0
+  },
+  "sp_7": {
+    "rank": 128,
+    "max_optimizer_steps": null,
+    "optimizer_steps_done": 0
+  },
+  "sp_8": {
+    "rank": 128,
+    "max_optimizer_steps": null,
+    "optimizer_steps_done": 0
+  },
+  "sp_9": {
+    "rank": 136,
+    "max_optimizer_steps": null,
+    "optimizer_steps_done": 0
+  }
+}

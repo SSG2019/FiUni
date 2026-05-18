@@ -1,0 +1,22 @@
+{
+  "sp_0": {
+    "rank": 32,
+    "max_optimizer_steps": null,
+    "optimizer_steps_done": 0
+  },
+  "sp_1": {
+    "rank": 32,
+    "max_optimizer_steps": null,
+    "optimizer_steps_done": 0
+  },
+  "sp_2": {
+    "rank": 32,
+    "max_optimizer_steps": null,
+    "optimizer_steps_done": 0
+  },
+  "sp_3": {
+    "rank": 32,
+    "max_optimizer_steps": null,
+    "optimizer_steps_done": 0
+  }
+}

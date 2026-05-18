@@ -1,0 +1,48 @@
+{
+  "model_name": "/home/dell/.cache/modelscope/hub/models/LLM-Research/Meta-Llama-3.1-8B",
+  "order_id": 3,
+  "seed": 43,
+  "batch_size": 4,
+  "rank": 128,
+  "detect_rank": 8,
+  "expand_delta_rank": 8,
+  "expand_direct": false,
+  "max_source_len": 512,
+  "max_target_len": 32,
+  "t_low": 0.6,
+  "t_high": 0.7,
+  "layer_selection": "all",
+  "detect_layer_selection": "31",
+  "target_modules": "q,v",
+  "lr": 0.0001,
+  "weight_decay": 0.0,
+  "filora_dropout": 0.1,
+  "expand_cooldown_steps": 40,
+  "new_cooldown_steps": 10,
+  "filora_initial_max_optimizer_steps": null,
+  "filora_expand_extra_optimizer_steps": 0,
+  "cache_dir": null,
+  "cl_root": "/home/dell/FU_CL/CL",
+  "device": "cuda:0",
+  "out_dir": "/home/dell/FU_CL/outputs/train/train_sc_llama_dropout01/order3/seed43",
+  "eval_batch_size": 4,
+  "eval_max_new_tokens": null,
+  "skip_test_eval": false,
+  "no_progress": false,
+  "gradient_accumulation_steps": 8,
+  "fisher_ag_group_size": 8,
+  "use_bfloat16": true,
+  "offline": false,
+  "model_family": "llama"
+}
+[Info] Device: cuda:0
+[Info] out_dir: /home/dell/FU_CL/outputs/train/train_sc_llama_dropout01/order3/seed43
+[Info] Total FiLoRA R parameters (numel): 4,194,304
+[Done] SC training completed.
+[Info] Merged FiLoRA into base weights for 64 layers.
+[Eval] task=yahoo train_win_sid=sp_0 seq_EM_acc=0.6772 (5147/7600) batches=1900 (FiLoRA=sum_all)
+[Eval] task=amazon train_win_sid=sp_1 seq_EM_acc=0.5958 (4528/7600) batches=1900 (FiLoRA=sum_all)
+[Eval] task=ag train_win_sid=sp_2 seq_EM_acc=0.8089 (6148/7600) batches=1900 (FiLoRA=sum_all)
+[Eval] task=dbpedia train_win_sid=sp_3 seq_EM_acc=0.9804 (7451/7600) batches=1900 (FiLoRA=sum_all)
+[Eval] macro_avg_sequence_em_acc (mean over tasks)=0.7656
+[Done] Test eval: /home/dell/FU_CL/outputs/train/train_sc_llama_dropout01/order3/seed43/sc_test_eval.json

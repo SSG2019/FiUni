@@ -1,0 +1,38 @@
+{
+  "per_task": {
+    "dbpedia": {
+      "sequence_exact_match_acc": 0.9785526315789473,
+      "em_correct": 7437,
+      "em_total": 7600,
+      "train_window_majority_subspace_id": "sp_0",
+      "num_batches": 238,
+      "num_examples": 7600
+    },
+    "amazon": {
+      "sequence_exact_match_acc": 0.5056578947368421,
+      "em_correct": 3843,
+      "em_total": 7600,
+      "train_window_majority_subspace_id": "sp_1",
+      "num_batches": 238,
+      "num_examples": 7600
+    },
+    "yahoo": {
+      "sequence_exact_match_acc": 0.7069736842105263,
+      "em_correct": 5373,
+      "em_total": 7600,
+      "train_window_majority_subspace_id": "sp_2",
+      "num_batches": 238,
+      "num_examples": 7600
+    },
+    "ag": {
+      "sequence_exact_match_acc": 0.8910526315789473,
+      "em_correct": 6772,
+      "em_total": 7600,
+      "train_window_majority_subspace_id": "sp_3",
+      "num_batches": 238,
+      "num_examples": 7600
+    }
+  },
+  "macro_avg_sequence_em_acc": 0.7705592105263157,
+  "filora_forward": "sum_all_existing_subspaces"
+}
