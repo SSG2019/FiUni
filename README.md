@@ -114,5 +114,5 @@ After training, calculate the final scores with:
 ```bash
 python calc_train_scores.py
 ```
-
-Please modify the paths in `calc_train_scores.py` if your outputs are saved in a different directory.
+---
+This paper is currently under review. If you use this repository before the paper is officially published, please cite or acknowledge this work after the publication information becomes available.
