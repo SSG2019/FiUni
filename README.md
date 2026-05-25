@@ -1,34 +1,118 @@
 # FiUni
 
-This repository contains the partial implementation and experimental artifacts for our paper:
+Official implementation of **Unifying Detection and Adaptation in Task-Free Continual Learning**.
 
-**Unifying Detection and Adaptation in Task-Free Continual Learning**
+FiUni is a Fisher geometry-based framework for task-free continual parameter-efficient fine-tuning. It uses Fisher/K-FAC principal subspaces for batch-level latent task detection and adaptive LoRA subspace construction.
 
-FiUni is a Fisher geometry-based framework for task-free continual parameter-efficient fine-tuning. It uses Fisher principal subspaces to perform batch-level latent task detection and adaptive LoRA subspace construction.
+---
 
-## Repository Structure
+## 📁 Repository Structure
 
 ```text
 .
-├── bash/                  # Training and evaluation scripts
-├── data/                  # Benchmark data used in our experiments
-├── FiUni/                 # Core training code for FiUni
-├── outputs/               # Experimental outputs reported in the paper
-├── calc_train_scores.py   # Script for calculating final training/evaluation scores
+├── bash/                  # Scripts for training, similarity analysis, and boundary detection
+├── data/                  # Benchmark data used in the paper
+├── FiUni/                 # Main implementation of FiUni
+├── fiunilib/              # Supporting library and utility modules
+├── outputs/               # All reported results and training logs in the paper
+├── calc_train_scores.py   # Script for calculating final scores
 ├── pyproject.toml         # Project configuration
 └── README.md
 ```
 
-## Current Release
+---
 
-This repository currently includes the main training scripts, FiUni training files, benchmark data, and experimental outputs used in the paper.
+## ⚙️ Environment Setup
 
-We release a partial version of the code at this stage. The complete and cleaned implementation will be publicly released after the paper is accepted.
+Depending on your CUDA version and local environment, you may need to install a compatible version of PyTorch manually before installing the remaining dependencies.
 
-## Usage
+```bash
+cd FiUni
 
-Training scripts are provided under the `bash/` directory. Users can refer to these scripts to reproduce the main experiments on the supported benchmarks.
+conda create -n fiuni python=3.9
+conda activate fiuni
 
-The `FiUni/` directory contains the core training files of FiUni. The `data/` directory contains the benchmark data used in our experiments.
+pip install -e .
+```
 
-The `outputs/` directory contains the experimental results reported in the paper. The script `calc_train_scores.py` can be used to aggregate and calculate final scores from saved outputs.
+---
+
+## 📊 Data
+
+The `data/` directory contains the benchmark data used in the paper:
+
+```text
+data/
+├── CL/                # Continual learning benchmark data for SC and LS
+└── TRACE-Benchmark/   # TRACE benchmark data
+```
+
+---
+
+## 🤖 Model Path
+
+The training scripts use local model paths by default. Please modify `MODEL_NAME` in the corresponding script before running.
+
+For example, in `bash/train/train_ls_llama.sh`:
+
+```bash
+MODEL_NAME="${HOME}/.cache/modelscope/hub/models/LLM-Research/Meta-Llama-3.1-8B"
+```
+
+Change this path to your own local checkpoint path if needed.
+
+---
+
+## 🚀 Usage
+
+All scripts are provided under `bash/`.
+
+### 🔍 Similarity Analysis
+
+The similarity script computes Fisher/K-FAC principal subspace similarities between tasks or data windows. It can be used to analyze whether Fisher subspace similarity reflects task-level geometric relations.
+
+```bash
+bash bash/run_similarity.sh
+```
+
+For running similarity analysis over multiple settings, use:
+
+```bash
+bash bash/run_similarity_all.sh
+```
+
+### 🧭 Boundary Detection
+
+The boundary detection script performs batch-level latent task detection in a task-free data stream. It estimates the Fisher principal subspace of incoming batches and compares it with historical subspaces to identify potential latent task changes.
+
+```bash
+bash bash/detect_boundary.sh
+```
+
+### 🏋️ Training
+
+The training scripts reproduce FiUni continual fine-tuning on the benchmarks used in the paper. The following command is an example for running FiUni on the LS benchmark with LLaMA:
+
+```bash
+bash bash/train/train_ls_llama.sh
+```
+
+Before running training, please check the model path, data path, task order, and random seed settings in the corresponding script.
+
+---
+
+## 📂 Results and Logs
+
+The `outputs/` directory contains all experimental results and training logs reported in the paper. These files can be used to inspect the original training records and verify the reported scores.
+
+---
+
+## 🧮 Score Calculation
+
+After training, calculate the final scores with:
+
+```bash
+python calc_train_scores.py
+```
+
+Please modify the paths in `calc_train_scores.py` if your outputs are saved in a different directory.
